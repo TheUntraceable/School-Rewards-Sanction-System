@@ -1,0 +1,4 @@
+{
+    "mongo_url" : "mongodb://mongo:mongo@127.0.0.1:27017/",
+    "teacher_weekly_points" : 150
+}

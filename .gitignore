@@ -1,0 +1,8 @@
+Dockerfile
+Discord Bot/
+Website/
+
+Discord Bot/__pycache__
+API/__pycache__
+Terminal Version/__pycache__
+API/models/__pycache__
