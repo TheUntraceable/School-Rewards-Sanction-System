@@ -1,7 +1,20 @@
-from .abc import * 
-from typing import List
+from .abc import BaseUserPayload, BaseUserUpdatePayload
+from typing import (
+    List
+)
 
-class Student(BaseUser):
-    
+class Student(BaseUserPayload):
+    """
+    Student object.
+    """
+
     demerits : int
-    timetable : List[List] # This will be a matrix containing classes in order, for each day of the week.
+
+class StudentUploadPayload(BaseUserUpdatePayload):
+    """
+    Update payload that will be used when updating a Student.
+    """
+    
+    points : int
+    demerits : int
+    timetable : List[List]
